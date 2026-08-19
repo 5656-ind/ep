@@ -1,0 +1,252 @@
+# Party Files — Little Saint James
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Party Files | Little Saint James</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #050505;
+      color: white;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background:
+        linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.8)),
+        url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e")
+        center/cover;
+    }
+
+    .logo {
+      position: absolute;
+      top: 25px;
+      left: 40px;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    .tag {
+      color: #d8b45a;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: clamp(55px, 10vw, 130px);
+      letter-spacing: 8px;
+      text-transform: uppercase;
+    }
+
+    .subtitle {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #ddd;
+    }
+
+    .btn {
+      margin-top: 35px;
+      padding: 15px 35px;
+      border: 1px solid #d8b45a;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      background: #d8b45a;
+      color: black;
+    }
+
+    section {
+      padding: 90px 10%;
+    }
+
+    .intro {
+      text-align: center;
+      background: #0b0b0b;
+    }
+
+    .intro h2,
+    .details h2 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      color: #d8b45a;
+    }
+
+    .intro p {
+      max-width: 750px;
+      margin: auto;
+      line-height: 1.8;
+      color: #bbb;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 45px;
+    }
+
+    .card {
+      background: #111;
+      padding: 35px;
+      text-align: center;
+      border: 1px solid #222;
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      border-color: #d8b45a;
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #d8b45a;
+    }
+
+    .card p {
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    .details {
+      background: linear-gradient(135deg, #0c0c0c, #171717);
+      text-align: center;
+    }
+
+    .date {
+      font-size: 32px;
+      margin: 25px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #000;
+      color: #666;
+      font-size: 13px;
+    }
+
+    .classified {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 8px 18px;
+      border: 1px solid #8b2020;
+      color: #e55;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">PARTY FILES</div>
+
+    <div class="tag">The Island Edition</div>
+
+    <h1>Little<br>Saint James</h1>
+
+    <p class="subtitle">
+      One island. One night. One unforgettable experience.
+    </p>
+
+    <a href="#details" class="btn">Open The Files</a>
+
+    <span class="classified">FICTIONAL EVENT CONCEPT</span>
+  </header>
+
+  <section class="intro">
+    <h2>THE FILE</h2>
+
+    <p>
+      Welcome to Party Files — an exclusive fictional island party
+      experience designed around tropical nights, private beaches,
+      music, lights and unforgettable memories.
+    </p>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>🌴 Island Nights</h3>
+        <p>
+          A tropical setting surrounded by ocean,
+          palm trees and spectacular sunsets.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🎧 Live Music</h3>
+        <p>
+          DJs, live performances and an all-night
+          soundtrack for the island.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>✨ Night Lights</h3>
+        <p>
+          Beach lighting, projections and immersive
+          decorations transform the island after dark.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🍹 Tropical Lounge</h3>
+        <p>
+          Relaxed beach lounges, tropical refreshments
+          and sunset views.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="details" id="details">
+
+    <h2>EVENT DETAILS</h2>
+
+    <div class="date">
+      SATURDAY · 8:00 PM
+    </div>
+
+    <p>
+      📍 Little Saint James · Private Island Event
+    </p>
+
+    <a href="#" class="btn" onclick="alert('Guest registration coming soon!')">
+      Request Invitation
+    </a>
+
+  </section>
+
+  <footer>
+    © 2026 PARTY FILES · FICTIONAL EVENT WEBSITE
+  </footer>
+
+</body>
+</html>
+```
